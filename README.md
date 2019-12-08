@@ -1,7 +1,9 @@
 # vocability
 This is a exercise for those who want to the improve their vocabulary by simply having a great time!
 
-Get a 10 question quiz of words from the Webster's Unabridged English Dictionary. Enrich your vocabulary. 
+Get a 10 question quiz of words from the Webster's Unabridged English Dictionary. Enrich your vocabulary.
+
+![](demo.gif)
 
 # Exercising
 
