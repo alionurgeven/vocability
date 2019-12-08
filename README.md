@@ -21,7 +21,7 @@ After the build
 `./vocability`
 
 # TO DO List
-[x] Create the game loop
-[x] Create the words database with their meanings
-[x] Create random question generator
-[] Create UI for the exercise
+- [x] Create the game loop
+- [x] Create the words database with their meanings
+- [x] Create random question generator
+- [ ] Create UI for the exercise
