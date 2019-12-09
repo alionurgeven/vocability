@@ -35,7 +35,7 @@ func (g *Game) start() {
 	i := 0
 	for i < len(g.Questions) {
 		var givenAnswer int
-		fmt.Println(g.Questions[i].QuestionText)
+		fmt.Println("\nWhat is the meaning of: " + g.Questions[i].QuestionText + "\n")
 		a := 0
 		for a < len(g.Questions[i].Answers) {
 			fmt.Println(strconv.Itoa(a+1) + ") " + g.Questions[i].Answers[a])
@@ -47,8 +47,9 @@ func (g *Game) start() {
 			g.correctAnswerCount++
 		} else {
 			fmt.Println("Answer is FALSE!")
+			fmt.Println("Correct answer is -> " + strconv.Itoa(g.Questions[i].correctAnswerIndex))
 		}
-		fmt.Println(givenAnswer)
+		fmt.Printf("\n\n\n")
 		i++
 	}
 	g.end()
@@ -98,7 +99,7 @@ func (g *Game) generateQuestions() {
 func main() {
 	var choice int
 
-	game := &Game{"Welcome to vocability. Do you want to start? \n1) Yes\n2) No", []Question{}, 0, 10}
+	game := &Game{"\nWelcome to vocability. Do you want to start? \n1) Yes\n2) No", []Question{}, 0, 10}
 	for {
 		game.initiate()
 		fmt.Scan(&choice)
